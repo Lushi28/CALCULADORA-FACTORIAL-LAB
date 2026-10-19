@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora de factorial</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f1f0ff;
+      color: #28234a;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      margin: 0;
+    }
+
+    main {
+      background: white;
+      padding: 32px;
+      border-radius: 16px;
+      box-shadow: 0 8px 24px #28234a22;
+      text-align: center;
+      width: min(360px, 85%);
+    }
+
+    input, button {
+      font: inherit;
+      padding: 10px;
+      margin-top: 12px;
+      border-radius: 8px;
+    }
+
+    input {
+      border: 1px solid #aaa;
+      width: 90%;
+    }
+
+    button {
+      border: 0;
+      background: #6855d9;
+      color: white;
+      cursor: pointer;
+    }
+
+    #resultado {
+      margin-top: 20px;
+      font-weight: bold;
+      overflow-wrap: anywhere;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Calculadora de factorial</h1>
+    <p>Ingresa un número entero no negativo.</p>
+
+    <input id="numero" type="number" min="0" step="1" placeholder="Por ejemplo: 5">
+    <br>
+    <button id="calcular">Calcular</button>
+
+    <p id="resultado" aria-live="polite"></p>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
